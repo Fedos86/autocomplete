@@ -11,7 +11,7 @@ $(function() {
             result = matcher.test(JSON_array[i].name + "#" + JSON_array[i].room + "#"  + JSON_array[i].email); 
 
             if (result) {
-                results.push(emloyees[i]);
+                results.push(JSON_array[i]);
             }    
         }
     response(results);  
